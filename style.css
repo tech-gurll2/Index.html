@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	font-family: 'inter', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	background-color: #0D0F1A;
+	color: #ffffff;
+}
+a {
+	color: #b825b8;
+	text-decoration: none;
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 15px 15px;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	background-color: #0D0F1A;
+	width: 100%;
+	z-index: 999;
+}
+.navbar .brand {
+	flex: 1;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.navbar .menu {
+	display: flex;
+	gap: 15px;
+	margin-right: 40px;
+}
+.navbar .menu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.4rem;
+	transition: color 0.3s;
+}
+.navbar .menu a:active {
+	color: #b825b8;
+}
+.navbar .menu a:hover {
+	font-size: 1.5rem;
+	color: aqua;
+}
+@media only screen and (max-width: 700px) {
+	.navbar {
+		padding: 15px 20px;
+	}
+	.navbar .menu a {
+		font-size: 1.1rem;
+	}
+	.navbar .menu a:hover {
+		font-size: 1.2rem;
+	}
+	.navbar .brand {
+		font-size: 1.3rem;
+	}
+	.navbar .menu {
+		gap: 10px;
+	}
+	.about {
+		flex-direction: column;
+	}
+}
+main {
+	margin-top: 100px;	
+}
+.about {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	gap: 10px;
+}
+.child {
+	text-align: left;
+}
+.profile-card {
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	border: 2px solid;
+	border-color: transparent aqua;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+.icon {
+}
+i {
+	color: aqua;
+	padding: 6px;
+	font-size: 25px;
+}
+.bio {
+	color: #AAB3C5;
+}
+.cv {
+	background-color: aqua;
+	width: 200px;
+	color: #111;
+	padding: 10px 20px;
+	border-radius: 20px;
+}
+.header {
+	border-color: #eee transparent;
+	margin: 60px 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: aqua;
+}
+.skill {
+	display: flex;
+	margin: 30px;
+}
+.skill-name {
+	width: 120px;
+}
+.progress-bar {
+	width: 90%;
+	height: 10px;
+	background: #eee;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: auto;
+}
+.progress {
+	background-color: aqua;
+	height: 100%;
+  	width: 0;
+  	border-radius: 10px;
+  	animation: fillProgress 1.5s forwards;
+}
+@keyframes fillProgress {
+	to {
+	  width: var(--progress);
+	}
+  }
+.skills-container {
+	width: 85%;
+	margin: 20px auto;
+}
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+}
+.childs {
+	border: 2px solid aqua;
+	margin: 10px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.project-info {
+	background-color: #111;
+	bottom: 0;
+	position: absolute;
+	color: white;
+	padding: 5px;
+}
+.contact {
+	background-color: #0c2d36;
+	padding: 50px 0;
+}
+form {
+	border-radius: 10px;
+	justify-content: center;
+	margin: auto;
+	width: 340px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+	padding: 10px;
+	background-color: #111;
+}
+input {
+	padding: 10px;
+	background-color: #eee;
+	border: #ddd;
+	width: 290px;
+	margin: 13px;
+	border-radius: 3px;
+	outline: none;
+	flex-direction: column;
+}
+input:focus {
+	border: thin solid #b825b8;
+	box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+input.submit {
+	background-color: aqua;
+	width: 310px;
+}
+#footer {
+	margin: 50px;
+	justify-content: center;
+	text-align: center;
+}
